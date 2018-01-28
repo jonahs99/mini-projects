@@ -20,24 +20,24 @@ I plan to pick up on my exploration of evolving behaviors in simulated creatures
 ## Daily tasks
 
 ### Monday
-[ ] Python web server
-[ ] Python websockets
+- [ ] Python web server
+- [ ] Python websockets
 
 ### Tuesday
-[ ] Random-motion test agent
-[ ] Environment objects (red and yellow circles, big green border)
-[ ] Broadcast to canvas
+- [ ] Random-motion test agent
+- [ ] Environment objects (red and yellow circles, big green border)
+- [ ] Broadcast to canvas
 
 ### Wednesday
-[ ] Inputs and outputs (vision)
-[ ] Visual of input and output
-[ ] Define the pytorch model (no training)
+- [ ] Inputs and outputs (vision)
+- [ ] Visual of input and output
+- [ ] Define the pytorch model (no training)
 
 ### Thursday
-[ ] Deep-q learning
+- [ ] Deep-q learning
 
 ### Friday
-[ ] Deep-q learning cont'd
+- [ ] Deep-q learning cont'd
 
 ### Saturday
-[ ] Loose ends and tidying up
+- [ ] Loose ends and tidying up
