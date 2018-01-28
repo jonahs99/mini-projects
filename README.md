@@ -5,6 +5,7 @@
 * Improve self-discipline with focused tasks and goals
 * Explore fun ideas without the guilt of "unfinished" projects
 * Familiarize myself with different toolchains
+* Improve time-management and gauging time constraints
 
 ## Goals
 
