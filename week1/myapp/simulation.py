@@ -54,5 +54,5 @@ class Simulation:
             e.update()
     def get_packet(self):
         entity_list = list(map(lambda e: e.packet(), self.entities))
-        packet = {'entities': entity_list}
+        packet = {'environment': {'rad': self.rad}, 'entities': entity_list}
         return packet

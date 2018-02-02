@@ -1,6 +1,7 @@
 let canvas
 let context
 let entities
+let environment
 
 let entity_draw = {
     agent: (agent) => {
@@ -25,7 +26,8 @@ let entity_draw = {
 function connect() {
     let socket = io()
     socket.on('update', (data) => {
-        console.log(data)
+        //console.log(data)
+        environment = data.environment
         entities = data.entities
         draw()
     })
@@ -67,7 +69,7 @@ function draw_bg() {
     context.fillStyle = '#4c6'
     context.beginPath()
     context.rect(-canvas.width / 2, canvas.height / 2, canvas.width, -canvas.height)
-    context.arc(0, 0, 400, 0, 2 * Math.PI)
+    context.arc(0, 0, environment.rad, 0, 2 * Math.PI)
     context.fill()
 }
 

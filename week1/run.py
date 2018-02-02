@@ -1,10 +1,14 @@
 import sys
 sys.path.append("./myapp")
 
+import eventlet
+eventlet.monkey_patch()
+
 from flask import Flask, send_from_directory, redirect, url_for, render_template
 from flask_socketio import SocketIO, emit
 
 from myapp import simulation
+from myapp.timer import call_repeatedly, call_once
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -21,14 +25,21 @@ def send_index():
 def send_static(path):
     return send_from_directory('myapp/static', path)
 
-world = simulation.Simulation()
+started = False
 
 @socketio.on('connect')
 def test_connect():
-    print('connection! sending a response...')
-    for i in range(1000):
-        world.update()
-        update_client()
+    global started
+    if not started:
+        started = True
+        start()
 
-def update_client():
-    emit('update', world.get_packet())
+def start():
+    world = simulation.Simulation()
+
+    def tick():
+        world.update()
+        socketio.emit('update', world.get_packet())
+        tick()
+
+    call_repeatedly(0.05, tick)
