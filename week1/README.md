@@ -6,8 +6,9 @@
   Messing around with websockets for a few days meant I didn't even get a chance to try RL
 * More defined mini-goals might help, I didn't find my "daily tasks" motivating at all
 * And... Genetic algorithm doesn't seem to work well on this conv net
+* But this was fun and I want to keep going!
 
-#Plans
+# Plans
 
 I plan to pick up on my exploration of evolving behaviors in simulated creatures; this time with reinforcement learning.
 
