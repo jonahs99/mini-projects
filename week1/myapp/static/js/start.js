@@ -13,6 +13,29 @@ let entity_draw = {
         context.arc(0, 0, agent.rad, 0, 2 * Math.PI)
         context.arc(agent.rad * 0.8, 0, agent.rad * 0.5, 0, 2 * Math.PI)
         context.fill()
+
+        for (let i = 0; i < agent.eye_dist.length; i++) {
+            ang = agent.fov / agent.eye_dist.length * 2 * i - agent.fov
+            context.rotate(ang)
+            let r = Math.floor(agent.eye_r[i] * 200 + 20)
+            let g = Math.floor(agent.eye_g[i] * 200)
+            let b = 20
+            let a = agent.eye_decay[i]
+            context.fillStyle = 'rgba(' + r + ',' + g + ',' + b + ','  + a + ')'
+            context.strokeStyle = '#eee'
+            context.lineWidth = 1
+            context.beginPath()
+            context.arc(agent.eye_dist[i], 0, 4, 0, Math.PI * 2)
+            context.fill()
+            context.stroke()
+            /*context.lineWidth = 2
+            context.beginPath()
+            context.moveTo(0, 0)
+            context.lineTo(agent.eye_dist[i], 0)
+            context.stroke()*/
+            context.rotate(-ang)
+        }
+
         context.restore()
     },
     blob: (blob) => {
