@@ -40,6 +40,5 @@ def start():
     def tick():
         world.update()
         socketio.emit('update', world.get_packet())
-        #call_once(tick)
 
     call_repeatedly(0.05, tick)
