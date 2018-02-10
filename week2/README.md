@@ -2,7 +2,7 @@
 
 Simple implementation of the sobel operator as per this [wikipedia article](https://en.wikipedia.org/wiki/Sobel_operator).
 
-[An example of the output](example.png)
+![An example of the output](example.png)
 
 Usage: `sobel -in <path to input file> -out <path to output file>`
 
