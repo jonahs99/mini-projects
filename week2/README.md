@@ -1,4 +1,10 @@
-# Week 2: Graphical explorations in Go
+# Week 2: First Go Project
+
+Simple implementation of the sobel operator as per this [wikipedia article](https://en.wikipedia.org/wiki/Sobel_operator).
+
+[An example of the output](sobel/examples/wiki-out.png)
+
+Usage: `sobel -in <path to input file> -out <path to output file>`
 
 # Plan
 
