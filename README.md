@@ -1,5 +1,10 @@
 # Weekly Mini-Projects
 
+1. [Hungry](https://github.com/jonahs99/hungry)
+2. [Sobel](https://github.com/jonahs99/sobel)
+3. [Painter](https://github.com/jonahs99/painter)
+4. [Fracture](https://github.com/jonahs99/fracture)
+
 ## Motivation
 
 * Improve self-discipline with focused tasks and goals
