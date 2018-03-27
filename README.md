@@ -1,9 +1,11 @@
 # Weekly Mini-Projects
 
-1. [Hungry](https://github.com/jonahs99/hungry)
-2. [Sobel](https://github.com/jonahs99/sobel)
-3. [Painter](https://github.com/jonahs99/painter)
-4. [Fracture](https://github.com/jonahs99/fracture)
+1. [Hungry](https://github.com/jonahs99/hungry) - evolving behavioral neural nets
+2. [Sobel](https://github.com/jonahs99/sobel) - edge detection as a first Golang project
+3. [Painter](https://github.com/jonahs99/painter) - trying to copy a generative art project
+4. [Fracture](https://github.com/jonahs99/fracture) - copying another generative art project
+5. [Mbrot](https://github.com/jonahs99/mbrot) - yet another mandelbrot visualization
+6. [Contour](https://github.com/jonahs99/contour) - my own generative art idea
 
 ## Motivation
 
